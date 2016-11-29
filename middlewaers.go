@@ -123,19 +123,3 @@ func tokenAuth(token string) c.Middleware {
 		return nil
 	})
 }
-
-// writeBody is response plugin that writes entire body of response to provided
-// writer and closes body after that.
-func writeBody(w io.Writer) c.Middleware {
-	return c.ResponseProcessor(func(resp *http.Response, err error) error {
-		if err != nil {
-			return err
-		}
-		_, err = io.Copy(w, resp.Body)
-		if err != nil {
-			return err
-		}
-		resp.Body.Close()
-		return nil
-	})
-}

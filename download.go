@@ -14,6 +14,7 @@ import (
 	"go.delic.rs/cliware-middlewares/responsebody"
 	curl "go.delic.rs/cliware-middlewares/url"
 	"go.delic.rs/gwc"
+	"go.delic.rs/cliware"
 )
 
 const (
@@ -144,7 +145,7 @@ func (d *downloadService) downloadChunk(ctx context.Context, dst, url string, ch
 			headers.Method("GET"),
 			curl.URL(url),
 			headers.Set("Range", rangeHeader),
-			writeBody(f),
+			responsebody.Writer(f),
 		)
 
 		if err != nil {

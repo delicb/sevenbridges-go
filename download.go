@@ -14,7 +14,6 @@ import (
 	"go.delic.rs/cliware-middlewares/responsebody"
 	curl "go.delic.rs/cliware-middlewares/url"
 	"go.delic.rs/gwc"
-	"go.delic.rs/cliware"
 )
 
 const (

@@ -8,8 +8,6 @@ import (
 
 	"fmt"
 
-	"io"
-
 	"github.com/google/go-querystring/query"
 	c "go.delic.rs/cliware"
 	"go.delic.rs/cliware-middlewares/errors"

@@ -60,13 +60,13 @@ func New(baseURL, token string) *SevenBridges {
 // endpoints to share same middlewares and provide utility stuff commonly
 // needed by most of endpoints.
 type service struct {
-	*gwc.Layer
+	*gwc.Group
 }
 
 // newService creates and returns new service that will use provided client
 // to send requests.
 func newService(client gwc.Doer) *service {
-	return &service{gwc.NewLayer(client)}
+	return &service{gwc.NewGroup(client)}
 }
 
 // Do uses client for this service with its specific middlewares and, after

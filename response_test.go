@@ -1,14 +1,15 @@
 package sevenbridges_test
 
 import (
-	"testing"
 	"fmt"
 	"net/http"
-	"go.sbgenomics.com/sevenbridges-go"
+	"testing"
+
+	"github.com/delicb/sevenbridges-go"
 )
 
 func TestNewResponse(t *testing.T) {
-	for _, resp := range []*http.Response {
+	for _, resp := range []*http.Response{
 		&http.Response{
 			Header: http.Header(map[string][]string{
 				"X-Total-Matching-Query": []string{"1"},

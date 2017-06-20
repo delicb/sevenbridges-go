@@ -9,8 +9,8 @@ import (
 	"fmt"
 
 	"github.com/google/go-querystring/query"
-	c "go.delic.rs/cliware"
-	"go.delic.rs/cliware-middlewares/errors"
+	c "github.com/delicb/cliware"
+	"github.com/delicb/cliware-middlewares/errors"
 )
 
 // listOptions adds provided list options to request (in form of query parameters)

@@ -10,12 +10,12 @@ import (
 	"path/filepath"
 	"sync"
 
-	"go.delic.rs/cliware-middlewares/body"
-	"go.delic.rs/cliware-middlewares/headers"
-	"go.delic.rs/cliware-middlewares/query"
-	"go.delic.rs/cliware-middlewares/responsebody"
-	"go.delic.rs/cliware-middlewares/url"
-	"go.delic.rs/gwc"
+	"github.com/delicb/cliware-middlewares/body"
+	"github.com/delicb/cliware-middlewares/headers"
+	"github.com/delicb/cliware-middlewares/query"
+	"github.com/delicb/cliware-middlewares/responsebody"
+	"github.com/delicb/cliware-middlewares/url"
+	"github.com/delicb/gwc"
 )
 
 // UploadInitResponse holds information about upload that is in progress with

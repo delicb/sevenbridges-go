@@ -3,9 +3,9 @@ package sevenbridges
 import (
 	"context"
 
-	"go.delic.rs/cliware-middlewares/responsebody"
-	"go.delic.rs/cliware-middlewares/url"
-	"go.delic.rs/gwc"
+	"github.com/delicb/cliware-middlewares/responsebody"
+	"github.com/delicb/cliware-middlewares/url"
+	"github.com/delicb/gwc"
 )
 
 // User holds information about user available on SevenBridges platform.

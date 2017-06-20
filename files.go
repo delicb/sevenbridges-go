@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"go.delic.rs/cliware-middlewares/headers"
-	"go.delic.rs/cliware-middlewares/query"
-	"go.delic.rs/cliware-middlewares/responsebody"
-	"go.delic.rs/cliware-middlewares/url"
-	"go.delic.rs/gwc"
+	"github.com/delicb/cliware-middlewares/headers"
+	"github.com/delicb/cliware-middlewares/query"
+	"github.com/delicb/cliware-middlewares/responsebody"
+	"github.com/delicb/cliware-middlewares/url"
+	"github.com/delicb/gwc"
 )
 
 // Metadata is custom data attached to file.

@@ -3,11 +3,11 @@ package sevenbridges
 import (
 	"context"
 
-	"go.delic.rs/cliware-middlewares/body"
-	"go.delic.rs/cliware-middlewares/headers"
-	"go.delic.rs/cliware-middlewares/responsebody"
-	"go.delic.rs/cliware-middlewares/url"
-	"go.delic.rs/gwc"
+	"github.com/delicb/cliware-middlewares/body"
+	"github.com/delicb/cliware-middlewares/headers"
+	"github.com/delicb/cliware-middlewares/responsebody"
+	"github.com/delicb/cliware-middlewares/url"
+	"github.com/delicb/gwc"
 )
 
 // Project holds information about project on Seven Bridges platform.

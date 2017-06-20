@@ -5,11 +5,11 @@ import (
 
 	"context"
 
-	c "go.delic.rs/cliware"
-	"go.delic.rs/cliware-middlewares/errors"
-	"go.delic.rs/cliware-middlewares/headers"
-	"go.delic.rs/cliware-middlewares/url"
-	"go.delic.rs/gwc"
+	c "github.com/delicb/cliware"
+	"github.com/delicb/cliware-middlewares/errors"
+	"github.com/delicb/cliware-middlewares/headers"
+	"github.com/delicb/cliware-middlewares/url"
+	"github.com/delicb/gwc"
 )
 
 const (
